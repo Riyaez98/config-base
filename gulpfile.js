@@ -126,7 +126,7 @@ const serveur = function () {
 
 
 gulp.task('optimiser_images', optimiser_images);
-// gulp.task('optimiser_html', optimiser_html);
+gulp.task('optimiser_html', optimiser_html);
 gulp.task('optimiser_html', gulp.series('optimiser_images', optimiser_html));
 gulp.task('optimiser_css', gulp.series('optimiser_images', optimiser_css));
 gulp.task('optimiser_js', optimiser_js);
